@@ -557,7 +557,7 @@ const LandingPage = () => {
           </h1>
           <h1 className="subtitle" style={{ 
             fontSize: '1.5rem',
-            opacity: 0.4,
+            opacity: 0.6,
             fontWeight: '20',
             textAlign: 'center',
             marginTop: '-55.5px',

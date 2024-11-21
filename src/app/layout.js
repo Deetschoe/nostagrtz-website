@@ -1,4 +1,5 @@
 import localFont from "next/font/local";
+import Script from 'next/script';  // Add this import
 import "./globals.css";
 
 // Define custom fonts
@@ -33,6 +34,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
+      <head>
+        <Script 
+          strategy="afterInteractive"
+          data-domain="nostagrtz.com" 
+          src="https://plausible.io/js/script.js"
+        />
+      </head>
       <body>
         {children}
       </body>

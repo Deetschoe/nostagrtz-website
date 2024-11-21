@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { Camera, Instagram, Twitter, Play, ChevronLeft, ChevronRight, X, Mail } from 'lucide-react';
-<script defer data-domain="nostagrtz.com" src="https://plausible.io/js/script.js"></script>
+
 
 const StarField = () => {
   const [stars, setStars] = useState([]);

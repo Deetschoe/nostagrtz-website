@@ -352,11 +352,7 @@ const EmailModal = ({ isOpen, onClose, onSubmit }) => {
   );
 };
 
-
 const VideoSection = () => {
-  const [isPlaying, setIsPlaying] = useState(false);
-  const router = useRouter();
-
   return (
     <>
       <div style={{ marginBottom: '2rem' }}>
@@ -376,68 +372,28 @@ const VideoSection = () => {
           borderRadius: '0.5rem',
           overflow: 'hidden',
         }}>
-          {!isPlaying ? (
-            <div
-              onClick={() => setIsPlaying(true)}
-              style={{
-                position: 'absolute',
-                top: 0,
-                left: 0,
-                width: '100%',
-                height: '100%',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                cursor: 'pointer',
-              }}
-            >
-              <img
-                src="/image.jpg"
-                alt="Video thumbnail"
-                style={{
-                  position: 'absolute',
-                  width: '100%',
-                  height: '100%',
-                  objectFit: 'cover',
-                }}
-              />
-              <div style={{
-                width: '80px',
-                height: '80px',
-                backgroundColor: 'rgba(255, 255, 255, 0.9)',
-                borderRadius: '50%',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-              }}>
-                <Play size={40} color="black" />
-              </div>
-            </div>
-          ) : (
-            <iframe
-              src="YOUR_YOUTUBE_EMBED_URL?autoplay=1"
-              style={{
-                position: 'absolute',
-                top: 0,
-                left: 0,
-                width: '100%',
-                height: '100%',
-                border: 'none',
-              }}
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
-          )}
+          <iframe
+            src="https://www.youtube.com/embed/9U-3mQOsGNo?modestbranding=1&showinfo=0"
+            style={{
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              width: '100%',
+              height: '100%',
+            }}
+            frameBorder="0"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
         </div>
       </div>
 
-      {/* Demo link section with underline and hover effect */}
       <section style={{ marginBottom: '5rem' }}>
-       
       </section>
     </>
   );
 };
+
 
 const LandingPage = () => {
   const [email, setEmail] = useState('');
@@ -608,7 +564,7 @@ const LandingPage = () => {
 </p>
 
 <p style={{ color: '#d0d0d0', marginBottom: '1.5rem' }}>
-              preorders open up January 2024, prices will become avaliable then
+              preorders open Jan 2024 - these are photos of the first prototype, the actual preorder will be higher quality
               </p>
 
               <button

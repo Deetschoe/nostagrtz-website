@@ -13,16 +13,31 @@ export async function POST(request) {
       );
     }
 
-    // Initialize Airtable with your base and table ID
+    // Initialize Airtable
     const base = new Airtable({
       apiKey: process.env.AIRTABLE_TOKEN,
       endpointUrl: 'https://api.airtable.com',
     }).base('appRaduTEE1BfE56V');
-    
+
+    // Check for existing email
+    const existingRecords = await base('tbldXHe9UDetH1wlm')
+      .select({
+        filterByFormula: `{Email} = '${email}'`
+      })
+      .firstPage();
+
+    if (existingRecords.length > 0) {
+      return NextResponse.json(
+        { message: 'Email already subscribed' },
+        { status: 400 }
+      );
+    }
+
+    // Create new record if email doesn't exist
     const records = await base('tbldXHe9UDetH1wlm').create([
       {
         fields: {
-          'Email': email  // Make sure this matches your column name exactly
+          'Email': email
         }
       }
     ]);

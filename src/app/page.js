@@ -64,7 +64,7 @@ export default function Home() {
           
           <section className="mb-12">
             <p>"Kursed"</p>
-            <p>logline: on an island plagued by cursed vegetables that transform animals into monsters, a thieving cat partners with a mute bear to destroy the curse before it claims her famiily.
+            <p>logline: on a remote island of animals, cursed vegetables are turning everyone into mindless monsters. When her brother eats one, Maru the cat must team up with a mysterious mute bear to track down the source of the curse before it's too late.
             </p>
           </section>
       

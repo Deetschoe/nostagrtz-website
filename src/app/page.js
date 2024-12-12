@@ -145,29 +145,65 @@ export default function Home() {
         </div>
         
         <div className="mt-64">
-          <h1 className="text-4xl mt-8 mb-2">Nostagrtz</h1>
-          <p className="text-xl mb-8">animation studio creating stories using new tools and talent</p>
+          <h1 className="text-4xl mt-8 mb-2">Nostagrtz (based in san francisco, ca)</h1>
+          <p className="text-xl mb-8">Indie animation studio blending traditional and new tech.
+          </p>
 
           <br />
+          <br />
+
+       
 
           <section className="mb-12">
-            <p>"Kursed"</p>
-            <p>logline: on a remote island of animals, cursed vegetables are turning everyone into mindless monsters. When her brother eats one, Maru the cat must team up with a mysterious mute bear to track down the source of the curse before it's too late.</p>
+            <p>Kursed (first animated series)</p>
+            <p>on a remote island of animals, cursed vegetables are turning everyone into mindless monsters. When her brother eats one, Maru the cat must team up with a mysterious mute bear to track down the source of the curse before it's too late.</p>
           </section>
-      
+          <br></br>
+          <a 
+  href="https://www.youtube.com/watch?v=N1olGw2lqRg"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="block w-fit hover:opacity-80 transition-opacity"
+>
+ 
+  <Image 
+    src="/kursed.jpg"
+    alt="Kursed"
+    width={170}
+    height={170}
+    className="w-[50px] h-auto"
+    priority
+  />
+</a>
           <br />
           <br />
           <br />
 
           <section className="mb-12">
-            <h2 className="text-2xl mb-4">reach out if you animate, comfyui, voice act, machine learning, 3d stuff, have ideas, etc</h2>
+            <h2 className="text-2xl mb-4">We are looking for highly creative individuals, multitaskers who have 10+ different types of skills whether it is 3d, 2d, ai, or anything! reach out to us we are looking to hire</h2>
             <br />
           </section>
-
           <section className="mb-12">
-            <h2 className="text-2xl mb-4">x/twitter: @nostagrtz or @dieterschoening</h2>
-            <h2 className="text-2xl mb-4">nostagrtz@gmail.com</h2>
-          </section>
+  <h2 className="text-2xl mb-4">
+    send all inquires to{' '}
+    <a 
+      href="https://x.com/dieterschoening" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      className="dimmed-link"
+    >
+      @dieterschoening
+    </a>
+    {' '}on x or{' '}
+    <a 
+      href="mailto:nostagrtz@gmail.com"
+      className="dimmed-link"
+    >
+      nostagrtz@gmail.com
+    </a>
+  </h2>
+</section>
+
         </div>
       </main>
     </div>

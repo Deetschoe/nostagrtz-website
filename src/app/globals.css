@@ -15,3 +15,12 @@ main {
 .content {
   margin-top: 2rem;
 }
+
+.dimmed-link {
+  color: rgba(0, 0, 0, 0.7);
+  transition: color 0.2s ease;
+}
+
+.dimmed-link:hover {
+  color: rgba(0, 0, 0, 0.9);
+}

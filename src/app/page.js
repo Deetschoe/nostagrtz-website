@@ -149,22 +149,24 @@ export default function Home() {
           <p className="text-xl mb-8">Indie animation studio blending traditional and new tech.
           </p>
 
-          <br />
+  
           <br />
 
        
 
           <section className="mb-12">
-            <p>Kursed (first animated series)</p>
+            <p>Kursed (In Production Pilot Episode)</p>
             <p>on a remote island of animals, cursed vegetables are turning everyone into mindless monsters. When her brother eats one, Maru the cat must team up with a mysterious mute bear to track down the source of the curse before it's too late.</p>
           </section>
           <br></br>
           <a 
-  href="https://www.youtube.com/watch?v=N1olGw2lqRg"
+  href="https://www.youtube.com/watch?v=Wk1Qb0hujRw
+"
   target="_blank"
   rel="noopener noreferrer"
   className="block w-fit hover:opacity-80 transition-opacity"
 >
+
  
   <Image 
     src="/kursed.jpg"
@@ -175,12 +177,42 @@ export default function Home() {
     priority
   />
 </a>
-          <br />
+<br></br>
+<br></br>
+
+<section className="mb-12">
+            <p>Forgetful Memories (Canceled Pilot Episode)</p>
+            <p>Yusuke a Japanese spy is forced to forget his wife and joins forces with the man who made him forget in order to bring her back
+            </p>
+          </section>
+          <br></br>
+          <a 
+  href="https://www.youtube.com/watch?v=N1olGw2lqRg"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="block w-fit hover:opacity-80 transition-opacity"
+>
+
+ 
+  <Image 
+    src="/spy.jpg"
+    alt="Kursed"
+    width={170}
+    height={170}
+    className="w-[50px] h-auto"
+    priority
+  />
+</a>
+
+
           <br />
           <br />
 
+
+          <p>Interested in helping?</p>
+
           <section className="mb-12">
-            <h2 className="text-2xl mb-4">We are looking for highly creative individuals, multitaskers who have 10+ different types of skills whether it is 3d, 2d, ai, or anything! reach out to us we are looking to hire</h2>
+            <h2 className="text-2xl mb-4">We are looking for highly creative individuals with different skills whether it is 3d, 2d, ai, or anything! reach out to us we are looking to hire</h2>
             <br />
           </section>
           <section className="mb-12">
@@ -203,6 +235,10 @@ export default function Home() {
     </a>
   </h2>
 </section>
+<br>
+</br>
+<br>
+</br>
 
         </div>
       </main>

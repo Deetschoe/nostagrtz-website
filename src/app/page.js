@@ -179,7 +179,7 @@ export default function Home() {
 </a>
 <br></br>
 <br></br>
-
+{/* 
 <section className="mb-12">
             <p>Forgetful Memories (Canceled Pilot Episode)</p>
             <p>Yusuke a Japanese spy is forced to forget his wife and joins forces with the man who made him forget in order to bring her back
@@ -202,7 +202,7 @@ export default function Home() {
     className="w-[50px] h-auto"
     priority
   />
-</a>
+</a> */}
 
 
           <br />

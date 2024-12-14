@@ -160,7 +160,7 @@ export default function Home() {
           </section>
           <br></br>
           <a 
-  href="https://www.youtube.com/watch?v=Wk1Qb0hujRw
+  href="https://www.youtube.com/watch?v=N1olGw2lqRg
 "
   target="_blank"
   rel="noopener noreferrer"
@@ -187,7 +187,7 @@ export default function Home() {
           </section>
           <br></br>
           <a 
-  href="https://www.youtube.com/watch?v=N1olGw2lqRg"
+  href="https://www.youtube.com/watch?v=Wk1Qb0hujRw"
   target="_blank"
   rel="noopener noreferrer"
   className="block w-fit hover:opacity-80 transition-opacity"

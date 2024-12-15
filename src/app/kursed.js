@@ -1,10 +1,9 @@
 'use client'
 
 import Image from 'next/image'
-import Link from 'next/link'
 import { useState, useRef, useEffect } from 'react'
 
-export default function Home() {
+export default function Kursed() {
   const [position, setPosition] = useState({ x: 50, y: 40 })
   const [isDragging, setIsDragging] = useState(false)
   const [showVideo, setShowVideo] = useState(false)
@@ -12,6 +11,7 @@ export default function Home() {
   const pressTimer = useRef(null)
   const videoRef = useRef(null)
 
+  // Reusing the same interaction handlers from home page
   const handleMouseDown = (e) => {
     setIsDragging(true)
     pressTimer.current = setTimeout(() => {
@@ -78,6 +78,7 @@ export default function Home() {
 
   return (
     <div className="relative min-h-screen">
+      {/* Video overlay */}
       {showVideo && (
         <div 
           className="fixed inset-0 flex items-center justify-center z-50"
@@ -108,14 +109,14 @@ export default function Home() {
               controls={false}
               muted
             >
-              <source src="/logo.mp4" type="video/mp4" />
+              <source src="/kursed-trailer.mp4" type="video/mp4" />
             </video>
           </div>
         </div>
       )}
 
       <main 
-        className="max-w-4xl mx-auto min-h-screen pt-8"
+        className="max-w-4xl mx-auto px-24 min-h-screen pt-8"
         onMouseMove={handleMouseMove}
         onMouseUp={handleMouseUp}
       >
@@ -144,51 +145,37 @@ export default function Home() {
         </div>
         
         <div className="mt-64">
-          <h1 className="text-4xl mt-8 mb-2">Nostagrtz (based in san francisco, ca)</h1>
-          <p className="text-xl mb-8">Indie animation studio blending traditional and new tech.</p>
-
-          <br />
+          <h1 className="text-4xl mt-8 mb-2">Kursed</h1>
+          <p className="text-xl mb-8">Pilot Episode Launch: January 2025</p>
 
           <section className="mb-12">
-            <a 
-              href="https://www.youtube.com/watch?v=N1olGw2lqRg" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="kursed-link group inline-block"
-            >
-              <span className="inline-flex items-center">
-                Kursed <span className="ml-1">(First Animated Series)</span>
-              </span>
-            </a>
-            <p className="mt-2">on a remote island of animals, cursed vegetables are turning everyone into mindless monsters. When her brother eats one, Maru the cat must team up with a mysterious mute bear to track down the source of the curse before it's too late.</p>
+            <h2 className="text-2xl mb-4">The Story</h2>
+            <p className="mb-4">On a remote island of animals, cursed vegetables are turning everyone into mindless monsters. When her brother eats one, Maru the cat must team up with a mysterious mute bear to track down the source of the curse before it's too late.</p>
+            
+            <p className="mb-4">Through the wicked forest Maru races, her lungs ablaze. The stolen map flutters wildly in her grip while the mysterious beeping device clatters against her hip. Behind her, the ground trembles with each thunderous footstep of the pursuing monsters.</p>
           </section>
-          <br></br>
-          <div className="image-hover-container w-[200px] h-[200px]">
-            <a 
-              href="https://www.youtube.com/watch?v=N1olGw2lqRg" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="inline-block"
-            >
-              <Image 
-                src="/kursed.png"
-                alt="Kursed"
-                width={200}
-                height={200}
-                className="object-contain"
-                priority
-              />
-            </a>
-          </div>
 
-          <br /><br />
-  
-          <p>Interested in helping?</p>
+          <a 
+            href="https://www.youtube.com/watch?v=N1olGw2lqRg"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block w-fit hover:opacity-80 transition-opacity mb-12"
+          >
+            <Image 
+              src="/kursed.jpg"
+              alt="Kursed"
+              width={170}
+              height={170}
+              className="w-[50px] h-auto"
+              priority
+            />
+          </a>
 
           <section className="mb-12">
-            <h2 className="text-2xl mb-4">We are looking for highly creative individuals with different skills whether it is 3d, 2d, ai, or anything! reach out to us we are looking to hire</h2>
+            <h2 className="text-2xl mb-4">Join Our Team</h2>
+            <p className="mb-4">We are looking for highly creative individuals with different skills whether it is 3d, 2d, ai, or anything! reach out to us we are looking to hire</p>
           </section>
-          
+
           <section className="mb-12">
             <h2 className="text-2xl mb-4">
               send all inquires to{' '}
@@ -209,8 +196,6 @@ export default function Home() {
               </a>
             </h2>
           </section>
-          <br /><br />
-          <br /><br />
         </div>
       </main>
     </div>

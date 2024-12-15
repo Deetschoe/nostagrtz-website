@@ -24,3 +24,57 @@ main {
 .dimmed-link:hover {
   color: rgba(0, 0, 0, 0.9);
 }
+
+.gradient-text {
+  display: inline-block;
+  transition: all 0.3s ease;
+  background: linear-gradient(
+    90deg, 
+    #90EE90 0%, 
+    #98FB98 25%, 
+    #F0E68C 50%, 
+    #98FB98 75%, 
+    #90EE90 100%
+  );
+  background-size: 200% auto;
+  background-position: 0% 50%;
+  opacity: 0;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.gradient-text-container:hover .gradient-text {
+  opacity: 1;
+  transform: scale(1.05);
+  animation: gradientText 3s ease infinite;
+}
+
+@keyframes gradientText {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.image-hover-container {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.image-hover-container img {
+  transition: transform 0.3s ease;
+}
+
+.image-hover-container:hover img {
+  transform: scale(1.05);
+}
+.kursed-link {
+  display: inline-block;
+  transition: all 0.3s ease;
+  color: black;
+  cursor: pointer;
+}
+
+.kursed-link:hover {
+  color: #5f2de0;
+  transform: scale(1.01);
+}

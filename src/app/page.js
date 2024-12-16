@@ -145,7 +145,7 @@ export default function Home() {
         
         <div className="mt-64">
           <h1 className="text-4xl mt-8 mb-2">Nostagrtz (based in san francisco, ca)</h1>
-          <p className="text-xl mb-8">Indie animation studio blending traditional and new tech.</p>
+          <p className="text-xl mb-8">animation studio pioneering a new era of animation          </p>
 
           <br />
 

@@ -78,3 +78,22 @@ main {
   color: #5f2de0;
   transform: scale(1.01);
 }
+
+.social-icons-container {
+  margin-top: 20px;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.social-icon-link {
+  display: inline-flex;
+  color: rgba(0, 0, 0, 0.7);
+  transition: all 0.3s ease;
+}
+
+.social-icon-link:hover {
+  color: rgba(0, 0, 0, 0.9);
+  transform: scale(1.1);
+}

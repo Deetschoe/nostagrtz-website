@@ -160,7 +160,7 @@ export default function Home() {
                 Kursed <span className="ml-1">(First Animated Series)</span>
               </span>
             </a>
-            <p className="mt-2">on a remote island of animals, cursed vegetables are turning everyone into mindless monsters. When her brother eats one, Maru the cat must team up with a mysterious mute bear to track down the source of the curse before it's too late.</p>
+            <p className="mt-2">On Yorokobi, a hidden island between Japan and America, a failed human experiment gave animals intelligence and civilization. But now its corruption spreads, transforming animals into cursed monsters, forcing an overconfident cat and resourceful yellow bear to contain the threat before their world is exposed to humanity.</p>
           </section>
           <br></br>
           <div className="image-hover-container w-[200px] h-[200px]">

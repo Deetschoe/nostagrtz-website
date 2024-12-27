@@ -144,8 +144,8 @@ export default function Home() {
         </div>
         
         <div className="mt-64">
-          <h1 className="text-4xl mt-8 mb-2">Nostagrtz (based in san francisco, ca)</h1>
-          <p className="text-xl mb-8">animation studio pioneering a new era of animation          </p>
+          <h1 className="text-4xl mt-8 mb-2">Nostagrtz</h1>
+          <p className="text-xl mb-8">animation studio pushing boundaries through vr & ai</p>
 
           <br />
 
@@ -157,7 +157,7 @@ export default function Home() {
               className="kursed-link group inline-block"
             >
               <span className="inline-flex items-center">
-                Kursed <span className="ml-1">(First Animated Series)</span>
+                Kursed <span className="ml-1">(flagship animated series)</span>
               </span>
             </a>
             <p className="mt-2">On Yorokobi, a hidden island between Japan and America, a failed human experiment gave animals intelligence and civilization. But now its corruption spreads, transforming animals into cursed monsters, forcing an overconfident cat and resourceful yellow bear to contain the threat before their world is exposed to humanity.</p>
@@ -180,13 +180,14 @@ export default function Home() {
               />
             </a>
           </div>
+          <br /><br />
 
           <br /><br />
   
-          <p>Interested in helping?</p>
+          <p>Interested in joining the team?</p>
 
           <section className="mb-12">
-            <h2 className="text-2xl mb-4">We are looking for highly creative individuals with different skills whether it is 3d, 2d, ai, or anything! reach out to us we are looking to hire</h2>
+            <h2 className="text-2xl mb-4">We are a small remote team around the world, right now looking for highly creative individuals with skills in 3d, 2d, ai, and voice acting!</h2>
           </section>
           
           <section className="mb-12">

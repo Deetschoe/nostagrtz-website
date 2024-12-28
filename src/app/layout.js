@@ -16,7 +16,7 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: 'Nostagrt Studios',
+  title: 'Nostagrtz',
   description: 'Enhanced Interactive Entertainment Devices',
   icons: {
     icon: [

@@ -144,7 +144,7 @@ export default function Home() {
         </div>
         
         <div className="mt-64">
-          <h1 className="text-4xl mt-8 mb-2">Nostagrtz</h1>
+          <h1 className="text-4xl mt-8 mb-2">Nostagrtz Studios</h1>
           <p className="text-xl mb-8">animation studio pushing boundaries through vr & ai</p>
 
           <br />
